@@ -1,0 +1,51 @@
+
+.title {
+    color: rgb(19, 33, 44);
+    font-weight: bold;    
+    }
+    
+.list-group-item.list-group-item {
+    width: 95%;
+    display: block;
+    margin: auto;    
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.mb-3 {
+    opacity: .75;
+    width: 100%;
+    display: block;
+    margin: auto;    
+    justify-content: center;
+    align-items: center;
+    }
+
+.list-group-item {
+    opacity: .75;
+    margin: 20px;
+    border-radius: 15px;
+    }
+
+.form {
+    margin: 20px;
+    margin-bottom: 20px;
+
+    }
+
+.list-group {
+    margin: 20px;
+    padding-bottom: 55px;
+    background-color: rgb(32, 139, 48);
+    opacity: .85;
+    border-radius: 25px;
+    }
+
+.button {
+    display: block;
+    margin: auto;    
+    /* justify-content: center;
+    align-items: center; */
+}
