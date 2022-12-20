@@ -89,24 +89,14 @@ const resolvers = {
 			}
 			throw new AuthenticationError('Please Login to Delete');
 		},
-		// updateTodo: async (root, args, context) => {
-		// 	if (context.user) {
-		// 		const { id, title, detail, date } = args
-		// 		const updatedTodo = {};
-
-		// 		if (title != undefined) {
-		// 			updatedTodo.title = title;
-		// 		}
-		// 		if (detail != undefined) {
-		// 			updatedTodo.detail = detail;
-		// 		}
-		// 		if (date != undefined) {
-		// 			updatedTodo.date = date;
-		// 		}
-		// 		const todo = await Todo.findByIdAndUpdate(id, updatedTodo, { new: true })
-		// 		return todo;
-		// 	}
-		// 	throw new AuthenticationError('Please Login to Update');
+		updateTodo: async (root, args, context) => {
+			if (context.user) {
+				
+				const todo = await Todo.findByIdAndUpdate({_id:args._id}, {$set:args}, { new: true })
+				return todo;
+			}
+			throw new AuthenticationError('Please Login to Update');
+	}
 
 
 	},

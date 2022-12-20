@@ -14,6 +14,7 @@ import Home from './pages/Home';
 import Signup from './pages/SignUp/index';
 import Login from './pages/Login/index';
 import Footer from './components/Footer';
+import Edit from './components/Edit'
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -55,6 +56,10 @@ function App() {
             <Route
               path="/signup"
               element={<Signup />}
+            />
+             <Route
+              path="/edit/:id"
+              element={<Edit />}
             />
             <Route
               path='*'

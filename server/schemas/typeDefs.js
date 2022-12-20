@@ -31,6 +31,8 @@ const typeDefs = gql`
 		login(email: String!, password: String!): Auth
 		deleteTodo(_id:ID):User
 		addTodo(title:String,detail:String,date:Date):User
+		updateTodo(_id:ID,title:String,detail:String,date:Date):User
+
 		
 	}
 `;

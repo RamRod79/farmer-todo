@@ -3,7 +3,7 @@ import React, { useContext, useEffect, useRef, useState } from "react";
 import { ADD_TODO } from "../../utils/mutations";
 import { GET_TODOS } from "../../utils/queries";
 import './Todo.css';
-
+import { Link } from "react-router-dom";
 import moment from 'moment'
 import { TodoContext } from "../../TodoContext";
 
